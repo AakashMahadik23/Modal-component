@@ -1,0 +1,251 @@
+// Modal.scss
+$rose-color: #e63946;
+$font-family: "Inter", sans-serif;
+$text-color: #000000;
+$border-color: #cecece;
+$inner-border-color: #cecece;
+$radiobutton-color: #a8e9ff;
+$radiobutton2-color: #00abe4;
+$radiobutton3-color: #d9d9d9;
+$background-color: #f3f3f3;
+$link-color: #777777;
+$subheadingcolor: #727272;
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 38px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  max-width: 550px;
+  max-height: 400px;
+  position: relative;
+  padding: 50px;
+}
+
+.close-button {
+  right: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  padding-right: 71px;
+}
+
+.close-icon{
+  height: 12px;
+  width: 12px;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp-box {
+  width: 45px; // Adjust the width according to your preference
+  height: 40px;
+  font-size: 20px; // Adjust the font size according to your preference
+  text-align: center;
+  margin: 0 5px; // Add some spacing between the OTP digits
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 600;
+ 
+}
+
+.incorrect-otp {
+  //border-color: red;
+  border: 2px solid red;
+}
+.modal-heading {
+  font-family: $font-family;
+  font-weight: 600;
+  line-height: 29.05px;
+  letter-spacing: -5%;
+  margin-bottom: -12px;
+  font-size: 28px;
+}
+
+.modal-subheading {
+  color: $subheadingcolor;
+}
+
+.otp-label {
+  margin-right: 232px;
+  font-weight: 600;
+  font-family: $font-family;
+  line-height: 38.73px;
+  letter-spacing: -3%;
+  font-size: 22px;
+}
+
+.resend-link {
+  margin-left: 185px;
+  margin-top: 10px;
+}
+
+.resend-name {
+  color: #000000;
+  font-weight: 600;
+}
+
+.verify-otp-button{
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  color: white;
+  background-color: #00abe4;
+  margin-top: 26px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.verification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verification-message-container {
+  background: white;
+  padding: 20px;
+  border-radius: 38px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 400px;
+  max-height: 250px;
+  position: relative;
+  padding: 80px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.close-button-verify{
+  right: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  padding-right: 71px;
+}
+
+.verification-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 29.05px;
+  letter-spacing: -5%;
+margin-top: 0px;
+  font-size: 28px;
+  color: #000000;
+}
+.close-icon-verify{
+  height: 12px;
+  width: 12px;
+  margin-top: 6px;
+  margin-left: 5px;
+  color: #f3f3f3;
+}
+
+
+.close-button-verification {
+  right: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  padding-right: 71px;
+}
+
+.close-icon-verification {
+  height: 12px;
+  width: 12px;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.ellipse {
+  width: 115px;
+  height: 116px;
+  background-color: #3498db; /* Optional: Set a background color */
+  border-radius: 50%;
+  margin: 20px auto; /* Adjust margin as needed */
+  position: relative;
+}
+
+.tick-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust the width of the tick icon as needed */
+  height: 50px; /* Adjust the height of the tick icon as needed */
+}
+
+.Goback-button{
+  width: 200px;
+  height: 50px;
+  border-radius: 23px;
+  color: white;
+  background-color: #00abe4;
+  margin-top: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.verify-subheading{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 29.05px;
+  letter-spacing: -5%;
+margin-top: 0px;
+  font-size: 20px;
+  color: #000000;
+}
